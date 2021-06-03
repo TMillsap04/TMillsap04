@@ -1,0 +1,14 @@
+/* Change background to any color other than white.*/
+body{
+    background-color: rgb(26, 3, 56);
+}
+/*Change h1 and h3 colors*/
+h1{
+    color: blanchedalmond;
+}
+h3{
+    color:gray;
+}
+p{
+    color:gray;
+}
