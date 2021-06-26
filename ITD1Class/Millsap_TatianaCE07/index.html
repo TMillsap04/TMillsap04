@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Calculator</title>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+    <h1>Body Mass Calculator</h1>
+    <h2>We will calculate your BMI or Body Mass Index. This is a measure of body fat based on the height and weight of the person.</h2><br>
+    <form id="BMICalculator">
+        <!--
+            -2 inputs for height, one for the feet and one for the inches. Both can not be left blank.
+            -Feet input should be a whole number between 0 and 9
+            -The inches input should be between 0 and 12. Decimal values should be accepted.
+            -After 12, then another foot would be added instead. 
+            -Input for the weight of the user in lbs.
+            -Make sure it can not be left blank.
+            -The value could contain decimals and should be between 0 and 1,400.
+            -A button that starts the process.
+            -An empty H1 tag that will hold the final results:
+            -An Image that will change based on the Weight Range
+            -Remember to set the size of the image
+        -->
+        <p>What is your height?</p>
+        <input type="number" id="heightFeet" min="0" max="9" step="1" required><label for="heightFeet">ft.</label>
+        <input type="number" id="heightInches" min="0" max="12" step=".01" required><label for="heightInches">in.</label>
+        <br><br>
+        <p>How much do you weigh?</p>
+        <input type="number" id="weight" min="0" max="1400" step=".1" required><label for="weight">lbs</label><br><br>
+        <input type="button" id="bmiCalc" value="Calculate BMI">
+    </form>
+    <br>
+    <h1 id="finalResults"></h1>
+    <br>
+    <img id="weightImg" height="360">
+
+
+    <script src="JS/script.js"></script>
+</body>
+</html>

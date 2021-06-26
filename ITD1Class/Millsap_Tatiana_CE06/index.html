@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fill'er Up exercise</title>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+    <h1>Fill'er up Exercise</h1>
+    <h2>Let me help you convert gallons to other forms of liquids!</h2>
+    
+    <!-- Create a form for this it should have:
+       -Input for the number of gallons the user has. Make sure this can accept decimal places and only positive values.
+       - 3 radio Quarts(default option), pints, and cups 
+       - A button that starts conversion process converts the gal based on the radio button the user chooses.
+       - 3 empty number input fields for results: Quarts, Pints and cups
+       - each time the button is pressed all 3 fields should change
+       - If it is not selected, it should be set to blank or zero.
+       - Validation for the gallon input, cannot be blank or have negative values.
+
+       Conversion factors:
+       1 gal = 4 quarts, 8 pints, 16 cups
+       Make sure to clear out the unused fields.  For example, if converting to quarts; pints and cups should be blanks or zeroes.
+       button -->
+       <form id="fillerUp">
+            <input type="number" id="numOgallons" step=".01" min="0" max="20" required><label for="numOgallons">How many gallons do you have? Choose a number between 0-20.</label>
+
+        <br><br>
+        <fieldset>
+            <legend>What do you want to convert it to?</legend>
+            <input type="radio" name="amountType" value="quarts" id="quarts" checked><label for="quarts">Quarts</label>
+            <input type="radio" name="amountType" value="pints" id="pints"><label for="pints">Pints</label>
+            <input type="radio" name="amountType" value="cups" id="cups"><label for="cups">Cups</label>
+        </fieldset>
+        <br><br>
+        <input type="button" id="convertGal" value="Convert">
+        <h2>See your converted amount below!</h2>
+        <input type="number" name="quartsAmt" id="quartsAmt"><label for="quartsAmt">Quarts</label><br>
+        <input type="number" name="pintsAmt" id="pintsAmt"><label for="pintsAmt">Pints</label><br>
+        <input type="number" name="cupsAmt" id="cupsAmt"><label for="cupsAmt">Cups</label>
+       </form>
+       <br><br><br>
+      <!--Problem #2
+        Total the number of movies the user has and show imge based on ranking
+      
+        Create H1 tag with Problem name and additional if needed
+        Create form must have:
+            -Input for # of DVD positive whole numbers only
+            -Input for # of Blu-Rays pos whole numbers
+            -Input for # of UV pos whole nums only
+      
+        Button that starts process
+      
+        Empty H1 tag that hold final results Total # of movies owned
+      
+        Image that changes based on # of movies the user owns (set image size)
+      
+        Validation for number inputs and cannot be left blank only accept pos values.
+      
+        Ranking system:
+            ->50 movies "Your collection contains only X movies which makes you a bronze star member." X= total # of all movies
+            -50-100 movies "Your collection contains only X movies, which makes you a silver star member." X= total # of all movies
+            -100+ movies "Wow! your collection contains X movies, which makes you a gold star member." X= total # of all movies
+        -->        
+    <h1>Movie Star</h1>
+    <h2>How much of a movie buff are you? Find out where you rank in our Movie Club.</h2>
+    <h3>Put in the amount of each type of movie you own then press the see your rank button</h3>
+    <br>
+    <form id="movieBuff">
+        <fieldset>
+            <input type="number" id="numOfdvds" step="1" min="0" max="200" required><label for="numOfdvds">How many DVDs do you own?</label><br>
+            <input type="number" id="numOfblurays" step="1" min="0" max="200" required><label for="numOfblurays">How many Blu-Rays do you own?</label><br>
+            <input type="number" id="numOfuvs" step="1" min="0" max="200" required><label for="numOfuvs">How many Ultra Violets do you own?</label><br>
+            <br>
+            <input type="button" id="seeRanking" value="See Your Ranking">
+        </fieldset>    
+    </form>
+    <br>
+    <h1 id="finalResults"></h1>
+    <br>
+    <img id="bronzeStar" height="360">
+
+    <script src="JS/script.js"></script>
+</body>
+</html>

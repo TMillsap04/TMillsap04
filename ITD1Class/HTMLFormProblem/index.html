@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Form and Problems</title>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+    <form id="pizzaParty">
+        <h1>Pizza Party!!</h1>
+        <input type="number" id="numOfPeople" required min="0"><label for="numOfPeople">How many people will be at the party?</label>
+        <br>
+        <input type="number" id="slicesPerperson" required min="0"max="20"><label for="slicesPerperson">How many pieces of pizza would one person eat?</label>
+        <br>
+        <input type="number" id="slicesPerpizza" required min="0" max="50"><label for="slicesPerpizza">How many slices on the pizza?</label>
+        <br><br>
+        <input type="button" id="calcPizza" value="Calculate pizza">
+        <br><br>
+        <input type="text" id="finalanswer"><label for="finalanswer">Number of Pizzas needed</label> 
+        <h1 id="textresults"></h1>
+                
+    </form>
+
+
+
+
+    <script src="JS/script.js"></script>
+</body>
+</html>
