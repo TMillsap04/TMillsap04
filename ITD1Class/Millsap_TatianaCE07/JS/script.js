@@ -36,13 +36,14 @@ document.querySelector("#bmiCalc").addEventListener("click",function(e)
        )
         {
             let feetHt = parseInt(document.querySelector("#heightFeet").value);
-            let secInchht = parseInt(feetHt*12);
             let inchHt = parseInt(document.querySelector("#heightInches").value);
-            let height = parseInt(secInchht+inchHt);
             let lbsWt = parseInt(document.querySelector("#weight").value);
-
-            let calcBMI = parseInt(703 * (lbsWt/(height*height)));
+            let height = parseInt((feetHt*12)+inchHt);
             
+
+            let calcBMI = parseInt(703*(lbsWt/(height*height))).toFixed(1);
+            
+
             if(calcBMI <18.5)
             {
                 document.querySelector("#finalResults").innerHTML = `Your BMI is ${calcBMI}, indicating your weight is in the under weight range for adults of your height.`
