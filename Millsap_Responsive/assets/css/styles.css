@@ -1,0 +1,284 @@
+/*
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+/*
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+/*
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*
+ADJUSTING CSS BELOW IS NOT NECESSARY
+You may choose to practice css by making changes to visuals
+*/
+
+html {
+
+}
+
+body {
+    margin: 10pt;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    line-height: 28px;
+    font-weight: 400;
+    color: #3d2514;
+    background-image: url(../img/burger-bg.png);
+    background-repeat: repeat;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0 0 20px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    line-height: normal;
+}
+    
+a, 
+a:focus, 
+a:hover {
+    text-decoration: none;
+}
+
+header {
+    background-color: #ffc045;
+    padding: 20px 0;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+}
+
+section {
+    padding: 20px 0;
+    text-align: center;
+}
+
+.logo {
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin: 0;
+}
+
+.button {
+    background-color: #bf2222;
+    border: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 16px 40px;
+    line-height: normal;
+    display: inline-block;
+}
+
+.button:hover {
+    color:#fff;
+    background-color:#ffc045;
+}
+
+.form-field {
+    box-shadow: none;
+    color: #3d3d3d;
+    border-color: #bebebe;
+    font-size: 0.75rem;
+    background-color: #ffffff;
+    padding: 10px;
+}
+
+footer {
+    margin-top: 20px;
+    padding: 30px 0;
+    background-color: #3d2514;
+    color: #ffffff;
+}
+
+
+/* 
+
+ELEMENTS THAT NEED FONT SIZING OR LAYOUT APPLIED
+
+- Utilize em, rem to control responsive font sizing for any typography
+- Flexbox and/or CSS Grid to control layout for at least one of the following sections: Hero, Menu, Features or Footer
+
+*/
+
+.container {
+    font-family: 'Raleway', serif;
+    width: 1200px;
+    max-width: 100%;
+    padding-top: 10%;
+}
+
+.section-title {
+    font-weight: 500;
+    font-family: 'Raleway', serif;
+    text-transform: uppercase;
+    color: #3d2514;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.section-subtitle {
+    font-weight: 500;
+    margin-bottom: 28px;
+}
+
+/* Hero */
+
+.hero {
+  display: inline-flex;      
+}
+
+.hero-item {
+    padding: 5px;
+}
+
+.hero-left {
+
+}
+
+.hero-right {
+
+}
+
+.hero-right img {
+   
+}
+
+.hero-title {
+    font-weight: 500;
+    font-family: 'Raleway', serif;
+    text-shadow: 4px 5px #fee7ba;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 50px;
+
+}
+
+.hero-subtitle {
+    font-weight: 500;
+    font-family: 'Raleway', serif;
+    font: 24px;
+    text-align: center;
+}
+
+/* Menu */
+
+.menu {
+    font-size: 1rem; 
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1rem;
+}
+
+.menu-item {
+    background-color: rgba(255, 192, 69, 0.8);
+}
+
+.menu-item img {
+
+}
+
+.menu-burger {
+    
+}
+
+.menu-description {
+    font: 20px; 
+}
+
+.price {
+    background-color: #bf2222;
+    border: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    padding: 16px 40px;
+    line-height: normal;
+    display: inline-block;
+    font: 16px;
+}
+
+/* Features */
+
+.features {
+    font: 24px;
+    display: inline-flex; 
+    justify-content: space-evenly;
+    grid-gap: 10rem;
+}
+
+.features-item {
+    font: 20px;
+}
+
+
+/* Footer Styles */
+.footer-container {
+    display: inline-flex;
+    margin: 0px 10px 0px 10px;
+}
+
+.footer-item {
+    text-align: center;
+}
+
+/* 
+ADD MEDIA QUERIES BELOW 
+
+- Must adjust at least one element for 4 breakpoints
+-first burger image
+
+*/
+@media screen (min-width: 1200px;)
+    img {width: fit-content;}
+@media screen (min-width: 1024px)
+    img {width: fit-content;}  
+@media screen (min-width: 426px)
+     body {width: 100%}     

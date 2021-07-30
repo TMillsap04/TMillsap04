@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="CSS/style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:wght@200;300;400&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+
+    <title>Document</title>
+</head>
+<body>
+    <!--Page needs to have at least these 5 sections. These can be named or arranged in whatever order feels best for your personal brand.
+
+Navigation
+Links jump to the other sections
+About
+Includes a photo and a short written bio.
+Work Examples:
+Review past classwork and feature at least 4 examples of projects you worked on.
+Link straight to your Codepen if you’re using work from the Introduction to Web Architecture course
+Link and include all necessary files in your submission if using work from the Introduction to Development I course.
+Skills
+A list or writeup of your technical and non-technical skills up to this point.
+Contact
+Include methods to contact you.
+Consider including links to your professional social platforms.
+Use both your own unique CSS stylesheet and Tailwind classes. Each needs to be used at least once. Take this opportunity to get stronger with either that you are feeling most comfortable with.
+
+
+Implement the visual design choices from your discussion post's style tile.
+
+
+No placeholder content (lorem ipsum) can be used.
+
+Have working navigation, links and buttons.
+
+-->
+    <header class="flex flex-wrap flex-row p-6 justify-between items-center relative text-white cursor-pointer bg-pink-600">
+        <a href="#">
+        <img src="https://cdn2.iconfinder.com/data/icons/planets-3/32/9-1024.png" alt="Galaxy" class="h-12 ">
+        </a>
+        <nav class="flex flex-col md:flex-row md:space-x-10 p-4 md:p-0 w-full md:w-auto">
+          <a href="#"class="text-white hover:bg-purple-800 p-3">About Me</a>
+          <a href="#"class="text-white hover:bg-purple-800 p-3">Projects</a>
+          <a href="#"class="text-white hover:bg-purple-800 p-3">Contact</a>
+        </nav>
+    </header>
+    <div>
+        <div class="grid grid-cols-2 m-4">            
+        <img src="IMG/Selfie1.jpeg" alt="ProfilePhoto" class="bg-contain">
+        <p>
+            Greetings and saluations!<br>
+            My name is Tatiana Millsap and I am a recent graduate with a Bachelors in Web Development. I have a long term love of technology and art and when I discovered web development I knew it was a match made in heaven. Feel free to browse my projects and see what I have created thus far. I love minimal yet colorful designs that provide a delicately curated web experience from start to finish. I hope you enjoy and decide to add me to your award winning team!
+        </p>
+        </div>
+        <div class="m-6">
+        <div>
+            <h2>
+                Past projects that I am proud of. Feel free to click the link below to view my code pen! 
+            </h2>
+            <div class="grid justify-items-center grid-cols-3 grid-gap-4">
+            <a href="#" class="border-2 border-white hover:bg-pink-600">Project 1</a>
+            <a href="#" class="border-2 border-white hover:bg-pink-600">Project 2</a>
+            <a href="#" class="border-2 border-white hover:bg-pink-600">Project 3</a>
+            </div>
+        </div>
+        <div class="m-4">
+            <h2 class="place-items-center">Skills
+            </h2>
+            <ul class="grid justify-items-center grid-cols-2 grid-gap-4">
+                <li class="border-2 border-white hover:bg-pink-600">Skill 1</li>
+                <li class="border-2 border-white hover:bg-pink-600">Skill 2</li>
+                <li class="border-2 border-white hover:bg-pink-600">Skill 3</li>
+                <li class="border-2 border-white hover:bg-pink-600">Skill 4</li>
+            </ul>            
+        </div>
+        <div>
+            <!--Create form for email with business links-->
+            How to reach me:
+            <a href="linkedin.com/in/tatiana-millsap-759321169">LinkedIn</a>
+            <a href="https://github.com/TMillsap04">GitHub</a>
+            <a href="https://codepen.io/Tmillsap">CodePen</a>
+        </div>
+        </div>
+    </div>
+</body>
+</html>
